@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Avia tour World</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="images/logo.jpg"/>
+	<link type="text/css" rel="stylesheet" href="styles/css-reset.css"/>
+	<link type="text/css" rel="stylesheet" href="styles/style.css"/>
+	<link type="text/css" rel="stylesheet" href="styles/style2.css"/>
+	<link type="text/css" rel="stylesheet" href="styles/responsive.css"/>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<link type="text/css" rel="stylesheet" href="styles/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+	<link type="text/css" rel="stylesheet" href="styles/animate.css"/>
+	<link type="text/css" rel="stylesheet" href="styles/jquery.fancybox.min.css" media="screen"/>
+	<link type="text/css" rel="stylesheet" href="styles/owl.carousel.min.css"/>
+	<link type="text/css" rel="stylesheet" href="styles/owl.theme.default.min.css"/>
+	<script type="text/javascript" src="engine1/jquery.js"></script>
+	<style>
+
+
+</style>
+</head>
+<body>
+<div id="preloader">
+	<div class="ring">
+		Loading
+		<span></span>
+	</div>
+</div>
+
+<div id="circle" onClick="up()">
+	<i class="fas fa-angle-up"></i>
+</div><!--id="circle"-->
+<header>
+
+<!--my-account---------------------------------->
+<div id="id01" class="modal" style="z-index: 999999;">
+  <form class="modal-content animate " action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="closed" title="Bağla">&times;</span>
+    </div>
+
+    <div class="container">
+      <label for="uname">Email</label>
+      <input type="text" placeholder="Emailinizi daxil edin" name="uname" required>
+
+      <label for="psw">Şifrə</label>
+      <input type="password" placeholder="Şifrənizi daxil edin" name="psw" required>
+        
+      <button type="submit">Daxil ol</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Yadda saxla
+      </label>
+    </div>
+
+    <div class="container">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Bağla</button>
+      <span class="psw">Şifrəni <a href="#">unutmusan?</a></span>
+    </div>
+  </form>
+</div>
+
+
+
+
+
+<!--new-account---------------------------------->
+<div id="id02" class="modal" style="z-index: 999999;">
+  <form class="modal-content animate " action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id02').style.display='none'" class="closed" title="Bağla">&times;</span>
+    </div>
+
+    <div class="container">
+      <label for="uname">Adınız</label>
+      <input type="text" placeholder="Adınız" name="uname" required>
+      
+        <label for="uname">Soyadınız</label>
+      <input type="text" placeholder="Soyadınızı daxil edin" name="lastname" required>
+      
+        <label for="uname">Email</label>
+      <input type="text" placeholder="Emailinizi daxil edin" name="uname" required>
+
+      <label for="psw">Şifrə</label>
+      <input type="password" placeholder="Şifrəni daxil edin" name="psw" required>
+        
+      <button type="submit">Qeydiyyat</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Yadda saxla
+      </label>
+    </div>
+
+    <div class="container">
+      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Bağla</button>
+      <span class="psw">Şifrəni <a href="#">unutmusan?</a></span>
+    </div>
+  </form>
+</div>
+
+<!--register------------->
+<div class="container-fluid" >
+           <div class="pos-f-t">
+  <div class="collapse" id="navbarToggleExternalContent">
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+           		<i class="fa fa-times"></i>
+           </button>
+    <div class="p-4">
+      <h5 class="text-left ">Xoş Gəlmisiniz </h5>
+      
+      <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-left" onclick="document.getElementById('id01').style.display='block'" href="#"><i class="fa fa-sign-out"></i> Mənim Hesabım</a>
+          </li>
+          
+          <button type="button" class="btn btn-primary"  aria-pressed="false" autocomplete="off" onclick="document.getElementById('id02').style.display='block'"><i class="fa fa-user"> Yeni Hesab Yarat</i> </button>
+      </ul>
+    </div>
+  </div>
+  <nav class="navbar navbar-dark bg-transparent">
+  <a href="" class="text-white"><i class="fa fa-phone"></i> Zəng Vur</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+     <a href="#" class="text-white">Hesaba Daxil ol <i class="fa fa-angle-double-down"></i> </a>
+    
+    </button>
+  </nav>
+</div>
+
+
+</div><!--class="welcome"-->
+<div class="welcome secondaryColor">
+	
+		<a class="guest">Xoş Gəlmisiniz</a>
+
+		<a class="account" onclick="document.getElementById('id01').style.display='block'" style="width:auto;" href="#">
+			<i class="fas fa-user-alt" ></i> Mənim Hesabım
+		</a>
+
+		<a class="shop" href="#" onclick="document.getElementById('id02').style.display='block'">
+			<i class="fas fa-sign-out-alt" ></i> Yeni Hesab Yarat  
+		</a>
+	
+</div>
+
+
+<!--navbar------------>
+<nav class="navbar navbar-expand-lg navbar-light" style="width: 100%; position: absolute; z-index: 9999;">
+  <a class="navbar-brand d-inline-bock" href="index.html">Tour Travel</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="container" onclick="myFunction(this)">
+	  <div class="bar1"></div>
+	  <div class="bar2"></div>
+	  <div class="bar3"></div>
+	</div>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown" style="justify-content: flex-end;">
+    <ul class="navbar-nav ">
+      <li class="nav-item ">
+        <a class="nav-link active" href="index.html">Ana səhifə <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">Haqqımızda</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="hotels.html">Otel Sifarişi</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="services.html">Xidmətlər</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="tours.html">Turlar</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="blog.html">Blog</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="contact.html">Əlaqə</a>
+      </li>
+     
+    </ul>
+  </div>
+
+</nav>
+
+	
+	<div id="wowslider-container1" style="position: relative;">	
+	<div class="ws_images"><ul>
+		<li><img src="data1/images/coverimg4.jpg" alt="cover-img-4" title="Bizim səyahət agentliyimiz sizə 1 həftəlik Maldiv adalarına səyahət turu təşkil edir." id="wows1_0"/></li>
+		<li><img src="data1/images/img_bg_3.jpg" alt="responsive slider" title="Səyahət üçün etdiyiniz yatırım özünüz üçün etdiyiniz ən gözəl yatırımdır." id="wows1_1"/></li>
+		<li><img src="data1/images/img_bg_4.jpg" alt="img_bg_4" title="Səyahət etmək təkamül deməkdir" id="wows1_2"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#"><span><img src="data1/tooltips/coverimg4.jpg" alt="cover-img-4"/>1</span></a>
+		<a href="#"><span><img src="data1/tooltips/img_bg_3.jpg" alt="img_bg_3"/>2</span></a>
+		<a href="#"><span><img src="data1/tooltips/img_bg_4.jpg" alt="img_bg_4"/>3</span></a>
+	</div></div>
+	<div class="ws_shadow"></div>
+	</div>	
+</header>
+	<main>
+		<div class="search max">
+			<div class="choice row col-lg-4" style="margin-top: -54px; z-index: 999; padding:0 50px;">
+			   <div class="col choices active" onclick="openSearch(event, 'flight')"><i class="fas fa-fighter-jet"></i> Uçuş</div>
+			   <div class="col choices" onclick="openSearch(event, 'hotel')"><i class="fas fa-hotel"></i> Otel</div>
+			   <div class="col choices" onclick="openSearch(event, 'rentCar')"><i class="fas fa-car"></i> İcarə</div>
+			</div><!--class="row"-->
+		</div><!--class="search"-->
+		
+		<div class="search-box">
+			<div class="search-country max" id="flight">
+				<div class="row">
+					<div class="col-lg-3">
+						<label> Hara:</label>
+						<input class="form-control form-control-lg" type="text" placeholder="Hara">
+					</div>
+
+					<div class="col-lg-2">
+						<label> Hansı gündən:</label>
+						<input type="date" class="form-control form-control-lg" name="trip" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+					</div>
+
+					<div class="col-lg-2">
+					<form>
+						<div class="form-group">
+							<label> Hansı günə:</label>
+							<input type="date" class="form-control form-control-lg" name="trip" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+						</div>
+					</form>
+					</div>
+
+					<div class="col-lg-3">
+						<form>
+							<div class="form-group">
+								<label for="exampleFormControlSelect1"> Qonaq sayı:</label>
+								<select class="form-control form-control-lg" id="exampleFormControlSelect1">
+								  <option>1</option>
+								  <option>2</option>
+								  <option>3</option>
+								  <option>4</option>
+								  <option>5+</option>
+								</select>
+							  </div>
+						</form>
+					</div>
+					<div class="col-lg-2">
+					<label> Axtar:</label>
+						<input class="btn btn-primary form-control-lg" type="submit" value="Axtar">
+					</div>
+				</div><!--class="row"-->
+			</div><!--class="search-country"-->
+
+
+			<div class="search-country max" id="hotel">
+				<div class="row">
+					<div class="col-lg-2">
+						<p>TƏLƏSİN <br/> İNDİ BRON EDİN</p>
+					</div>
+
+					<div class="col-lg-3">
+						<label> Hansı gündən:</label>
+						<input type="date" class="form-control form-control-lg" name="trip" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+					</div>
+
+					<div class="col-lg-3">
+					<form>
+						<div class="form-group">
+							<label> Hansı günə qədər:</label>
+							<input type="date" class="form-control form-control-lg" name="trip" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+						</div>
+					</form>
+					</div>
+
+					<div class="col-lg-2">
+						<form>
+							<div class="form-group">
+								<label for="exampleFormControlSelect1"> Qonaq sayı:</label>
+								<select class="form-control form-control-lg" id="exampleFormControlSelect1">
+								  <option>1</option>
+								  <option>2</option>
+								  <option>3</option>
+								  <option>4</option>
+								  <option>5+</option>
+								</select>
+							  </div>
+						</form>
+					</div>
+					<div class="col-lg-2">
+					<label> Axtar:</label>
+						<input class="btn btn-primary form-control-lg" type="submit" value="Axtar">
+					</div>
+				</div><!--class="row"-->
+			</div><!--class="search-country"-->
+
+			<div class="search-country max" id="rentCar">
+				<div class="row">
+
+				<div class="col-lg-4">
+						<label> Hara:</label>
+						<input class="form-control form-control-lg" type="text" placeholder="Hara">
+					</div>
+
+					<div class="col-lg-3">
+						<label> Hansı gündən:</label>
+						<input type="date" class="form-control form-control-lg" name="trip" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+					</div>
+
+					<div class="col-lg-3">
+					<form>
+						<div class="form-group">
+							<label> Hansı günə qədər:</label>
+							<input type="date" class="form-control form-control-lg" name="trip" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+						</div>
+					</form>
+					</div>
+
+					<div class="col-lg-2">
+					<label> Axtar:</label>
+						<input class="btn btn-primary form-control-lg" type="submit" value="Axtar">
+					</div>
+				</div><!--class="row"-->
+			</div><!--class="search-country"-->
+		</div><!--class="search-box"-->
+		
+		<div class="tour-services max">
+			<div class="row text-center">
+			
+				<div class="col-lg-3">
+					<div class="service wow zoomIn" data-wow-delay="0.1s">
+						<i class="fas fa-plane-departure"></i>
+						<h5>Möhtəşəm Səyahət</h5>
+						<p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+					</div><!--class="service"-->
+				</div>
+				 
+				<div class="col-lg-3">
+					<div class="service wow zoomIn" data-wow-delay="0.3s">
+						<i class="fas fa-hotel"></i>
+						<h5>TƏLƏSİN İNDİ BRON EDİN</h5>
+						<p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+					</div><!--class="service"-->
+				</div>
+				 
+				<div class="col-lg-3">
+					<div class="service wow zoomIn" data-wow-delay="0.6s">
+						<i class="fas fa-car"></i>
+						<h5>İcarə maşın</h5>
+						<p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+					</div><!--class="service"-->
+				</div>
+				 
+				<div class="col-lg-3">
+					<div class="service wow zoomIn" data-wow-delay="0.9s">
+						<i class="fas fa-file-alt"></i>
+						<h5>Təhlükəsiz Səyahət</h5>
+						<p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+					</div><!--class="service"-->
+				</div>
+			</div>
+		</div><!--class="tour-services"-->
+		
+		<div class="destination">
+			<h1 class="text-center primaryColor">Top Turlar</h1>
+			<p class="text-center primaryColor">Aşağıdakı istiqamətlərə səyahət edənlər üstünlük təşkil edir.</p>
+			
+			<div class="d-flex bd-highlight max">
+			
+				<div class="flex-fill bd-highlight tour-entry wow zoomIn" data-wow-delay="0.1s">
+				
+					<div class="image-destination" style="background-image: url(images/blog-1.jpg);"></div><!--class="image-destination"-->
+					<a href="tours.html">
+						<div class="about-destination">
+							<div class="first-color">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+							</div>
+							<span>122 rezerv</span>
+							<p>Athens , Greece</p>
+							<p>$540</p>
+							
+						
+					</div><!--class="about-destination"-->
+					
+				</a>
+				</div>
+				
+				
+				<div class=" flex-fill bd-highlight tour-entry wow zoomIn" data-wow-delay="0.18s">
+					<div class="image-destination" style="background-image: url(images/blog-4.jpg);"></div><!--class="image-destination"-->
+					<a href="tours.html">
+						<div class="about-destination">
+							<div class="first-color">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+							</div>
+							<span>122 rezerv</span>
+							<p>Athens , Greece</p>
+							<p>$540</p>
+					</div><!--class="about-destination"-->
+					
+				</a>
+				</div>
+				<div class=" flex-fill bd-highlight tour-entry wow zoomIn" data-wow-delay="0.2s">
+				
+					<div class="image-destination" style="background-image: url(images/hotel-7.jpg);"></div><!--class="image-destination"-->
+					<a href="tours.html">
+						<div class="about-destination">
+							<div class="first-color">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+							</div>
+							<span>122 rezerv</span>
+							<p>Athens , Greece</p>
+							<p>$540</p>
+					</div><!--class="about-destination"-->
+					
+				</a>
+				</div>
+				<div class=" flex-fill bd-highlight tour-entry wow zoomIn" data-wow-delay="0.28s">
+					<div class="image-destination" style="background-image: url(images/tour-3.jpg);"></div><!--class="image-destination"-->
+					<a href="tours.html">
+						<div class="about-destination">
+							<div class="first-color">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+							</div>
+							<span>122 rezerv</span>
+							<p>Athens , Greece</p>
+							<p>$540</p>
+					</div><!--class="about-destination"-->
+					
+				</a>
+				</div>
+			</div>
+			
+			<div class="d-flex bd-highlight max">
+				
+				<div class="flex-fill bd-highlight tour-entry wow zoomIn" data-wow-delay="0.3s">
+				
+					<div class="image-destination" style="background-image: url(images/tour-4.jpg);"></div><!--class="image-destination"-->
+					<a href="tours.html">
+						<div class="about-destination">
+							<div class="first-color">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+							</div>
+							<span>122 rezerv</span>
+							<p>Athens , Greece</p>
+							<p>$540</p>
+							
+						
+					</div><!--class="about-destination"-->
+					
+				</a>
+				</div>
+				
+				<div class="flex-fill bd-highlight tour-entry wow zoomIn" data-wow-delay="0.38s">
+				
+					<div class="image-destination" style="background-image: url(images/tour-6.jpg);"></div><!--class="image-destination"-->
+					<a href="tours.html">
+						<div class="about-destination">
+						
+							<div class="first-color">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+							</div>
+							<span>122 rezerv</span>
+							<p>Athens , Greece</p>
+							<p>$540</p>
+							
+						
+					</div><!--class="about-destination"-->
+					
+				</a>
+				</div>
+				
+				<div class="flex-fill bd-highlight tour-entry wow zoomIn" data-wow-delay="0.4s">
+				
+					<div class="image-destination" style="background-image: url(images/tour-7.jpg);"></div><!--class="image-destination"-->
+					<a href="tours.html">
+						<div class="about-destination">
+							<div class="first-color">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+							</div>
+							<span>122 rezerv</span>
+							<p>Athens , Greece</p>
+							<p>$540</p>
+							
+						
+					</div><!--class="about-destination"-->
+					
+				</a>
+				</div>
+				
+				<div class="flex-fill bd-highlight tour-entry wow zoomIn" data-wow-delay="0.48s">
+				
+					<div class="image-destination" style="background-image: url(images/tour-8.jpg);"></div><!--class="image-destination"-->
+					<a href="tours.html">
+						<div class="about-destination">
+							<div class="first-color">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+							</div>
+							<span>122 rezerv</span>
+							<p>Athens , Greece</p>
+							<p>$540</p>
+							
+						
+					</div><!--class="about-destination"-->
+					
+				</a>
+				</div>
+			</div>
+		</div><!--class="destination"-->
+		
+		<div class="blog padded-container max">
+			<div class="heading text-center">
+				<h1 class="primaryColor">Blog</h1>
+				<p class="primaryColor w-100 m-auto">Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy </p>
+			</div>
+			
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="blog-img"></div>
+				</div>
+				
+				<div class="col-lg-6">
+					<div class="blog-container">
+						<div class="bg-img-blog d-inline-block" style="background-image: url(images/blog-1.jpg);"></div>
+						<div class="d-inline-block">
+							<small>Feb 22, 2018</small>
+							<p>Is simply dummy text of the printing and typesetting </p>
+							<small>Activities</small>
+						</div>
+					</div><!--class="blog-container"-->
+					
+					<div class="blog-container">
+						<div class="bg-img-blog d-inline-block" style="background-image: url(images/tour-8.jpg);"></div>
+						<div class="d-inline-block">
+							<small>Feb 22, 2018</small>
+							<p>Is simply dummy text of the printing and typesetting Is simply dummy text of the printing and typesetting</p>
+							<small>Activities</small>
+						</div>
+					</div><!--class="blog-container"-->
+					
+					<div class="blog-container">
+						<div class="bg-img-blog d-inline-block" style="background-image: url(images/blog-3.jpg);"></div>
+						<div class="d-inline-block">
+							<small>Feb 22, 2018</small>
+							<p>Is simply dummy text of the printing and typesetting </p>
+							<small>Activities</small>
+						</div>
+					</div><!--class="blog-container"-->
+					
+				</div>
+			</div>
+		</div><!--class="blog"-->
+		
+		<div class="sale padded-container">
+		<div class="max">
+			<div class="row">
+			
+				<div class="col-lg-6">
+					<div class="row">
+						<div class="col-lg-5">
+							<div class="sale-count">
+								<span class="first-color">45</span><span class="first-color">%</span><span>Off</span>
+								<p>SALE</p>
+								
+							</div><!--class="sale-count"-->
+							
+						</div>
+						<div class="col-lg-7">
+							<div class="sale-about">
+								<h3>Is simply dummy text of</h3>
+								<p>Is simply dummy text of the printing and typesetting Is simply dummy text of the printing and typesetting</p>
+								
+							</div><!--class="sale-about"-->
+							<a href="#"><input class="btn btn-primary form-control-lg w-50 float-right" type="submit" value="Ardını Oxu"></a>
+						</div>
+					</div>
+					
+					
+				</div>
+				
+				
+				
+				
+				<div class="col-lg-6">
+					<div class="wow fadeInUp" data-wow-delay="0.6s">
+						<a data-fancybox data-width="640" data-height="360" href="video/Heart%20touch%20lovely%20scene%20and%20meaningful%20-%20Short%20Film-%20Subscribe%20us%20for%20more%20videos.mp4">
+							<div class="video-bg">
+								<i class="fa fa-video first-color"></i>
+								<div class="video-cover"></div>
+							</div>
+						</a>
+					
+					</div>
+				
+				</div>
+				</div>
+			</div>
+		</div><!--class="sale"-->
+		
+
+	<div class="hotels padded-container max">
+		<div class="heading text-center">
+			<h1 class="primaryColor">HOTELLƏR</h1>
+			<p class="primaryColor w-100 m-auto">Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy </p>
+		</div>
+		<div class="row">
+			<div class="col">
+				
+				<div class="owl-carousel owl-theme"  style="margin-top: 75px!important;">
+					<div class="item wow fadeInUp" data-wow-delay="0.6s">
+					<a href="hotels.html">
+						<div class="otel-bg-img" style="background-image: url(images/hotel-1.jpg);">
+							<span class="price-otel">$120/night</span>
+						</div>
+						
+						<div class="main-otel d-inline-block">
+							<div class="first-color">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<span>545 Reviews</span>
+							</div>		
+							<h3>Hotel USA</h3>
+							<span>New York USA</span>
+							<p>Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>	
+						</div>
+						</a>
+
+					</div><!--class="item"-->
+					
+					<div class="item wow fadeInUp" data-wow-delay="0.8s">
+					<a href="hotels.html">
+						<div class="otel-bg-img" style="background-image: url(images/hotel-2.jpg);">
+							<span class="price-otel">$120/night</span>
+						</div>
+						
+						<div class="main-otel d-inline-block">
+							<div class="first-color">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<span>545 Reviews</span>
+							</div>		
+							<h3>Hotel USA</h3>
+							<span>New York USA</span>
+							<p>Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>	
+						</div>
+						</a>
+
+					</div><!--class="item"-->
+					
+					<div class="item wow fadeInUp" data-wow-delay="1s">
+					<a href="hotels.html">
+						<div class="otel-bg-img" style="background-image: url(images/hotel-3.jpg);">
+							<span class="price-otel">$120/night</span>
+						</div>
+						
+						<div class="main-otel d-inline-block">
+							<div class="first-color">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<span>545 Reviews</span>
+							</div>		
+							<h3>Hotel USA</h3>
+							<span>New York USA</span>
+							<p>Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>	
+						</div>
+						</a>
+
+					</div><!--class="item"-->
+					
+					<div class="item">
+					<a href="hotels.html">
+						<div class="otel-bg-img" style="background-image: url(images/hotel-4.jpg);">
+							<span class="price-otel">$120/night</span>
+						</div>
+						
+						<div class="main-otel d-inline-block">
+							<div class="first-color">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<span>545 Reviews</span>
+							</div>		
+							<h3>Hotel USA</h3>
+							<span>New York USA</span>
+							<p>Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>	
+						</div>
+						</a>
+
+					</div><!--class="item"-->
+					
+					<div class="item">
+					<a href="hotels.html">
+						<div class="otel-bg-img" style="background-image: url(images/hotel-7.jpg);">
+							<span class="price-otel">$120/night</span>
+						</div>
+						
+						<div class="main-otel d-inline-block">
+							<div class="first-color">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<span>545 Reviews</span>
+							</div>		
+							<h3>Hotel USA</h3>
+							<span>New York USA</span>
+							<p>Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>	
+						</div>
+						</a>
+
+					</div><!--class="item"-->
+					
+				
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="guests-comment padded-container">
+		<div class="heading text-center">
+			<h1 class="primaryColor">QONAQLARIMIZ DEYİRLƏR</h1>
+			<p class="primaryColor w-100 m-auto">Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy </p>
+		</div>
+		
+		<div class="row wow fadeInUp" data-wow-delay="0.6s">
+			<div class="col">
+				<div id="carouselExampleControls" class="carousel slide max" data-ride="carousel">
+				  <div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="guset-img" style="background-image: url(images/person1.jpg)"></div>
+						<div class="guest-inform text-center">
+							<h3 class="d-block primaryColor">Alisha Myers</h3>
+							<span>Miami Florida , USA</span>
+							<p>Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+						</div>
+					</div>
+					<div class="carousel-item">
+					  <div class="guset-img" style="background-image: url(images/person2.jpg)"></div>
+					  <div class="guest-inform text-center">
+							<h3 class="d-block primaryColor">James Fisher</h3>
+							<span>New York Florida , USA</span>
+							<p>Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+						</div>
+					</div>
+					<div class="carousel-item">
+					  <div class="guset-img" style="background-image: url(images/person3.jpg)"></div>
+					  <div class="guest-inform text-center">
+							<h3 class="d-block primaryColor">Jacob Webb</h3>
+							<span>Athens , Greece</span>
+							<p>Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+						</div>
+					</div>
+				  </div>
+				  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+				 	<i class="fas fa-chevron-left" style="font-size: 40px; z-index: 9999; color: #000;"></i>
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only" >Previous</span>
+				  </a>
+				  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+				   <i class="fas fa-chevron-right" style="font-size: 40px; z-index: 9999; color: #000;"></i>
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				  </a>
+				</div>
+			</div>
+		</div>	
+	</div><!--class="guests-comment"-->
+	
+	<div class="popularTravel padded-container max">
+		<div class="heading text-center">
+			<h1 class="primaryColor">Ən çox səyahət edilən ölkələr</h1>
+			<p class="primaryColor w-100 m-auto">Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy </p>
+		</div>
+		
+		<div class="row" style="margin:25px 0;">
+			<div class="col-lg-3">
+				<a href="tours.html">
+					<div class="country-bg wow fadeInUp" data-wow-delay="0.4s" style="background-image: url(images/tour-1.jpg)">
+						<div>
+							<p>ROME-5 DAYS</p>
+							<span class="first-color font-weight-bold">$120</span>
+							<small class="font-weight-bold">/ person</small>
+						</div>
+					</div>	
+				</a>
+				
+				<a href="tours.html">
+					<div class="country-bg wow fadeInUp" data-wow-delay="0.6s" style="background-image: url(images/tour-2.jpg)">
+						<div>
+							<p>ROME-5 DAYS</p>
+							<span class="first-color font-weight-bold">$120</span>
+							<small class="font-weight-bold">/ person</small>
+						</div>
+					</div>	
+				</a>
+				
+				
+			</div>
+			<div class="col-lg-3">
+				<a href="tours.html">
+					<div class="country-bg wow fadeInUp" data-wow-delay="0.8s" style="background-image: url(images/tour-3.jpg)">
+						<div>
+							<p>ROME-5 DAYS</p>
+							<span class="first-color font-weight-bold">$120</span>
+							<small class="font-weight-bold">/ person</small>
+						</div>
+					</div>	
+				</a>
+				
+				<a href="tours.html">
+					<div class="country-bg wow fadeInUp" data-wow-delay="1s" style="background-image: url(images/tour-4.jpg)">
+						<div>
+							<p>ROME-5 DAYS</p>
+							<span class="first-color font-weight-bold">$120</span>
+							<small class="font-weight-bold">/ person</small>
+						</div>
+					</div>	
+				</a>
+			</div>
+			<div class="col-lg-6">
+				<div class="heading text-left" style="margin: 0;">
+					<h1 class="primaryColor">İtaliya Avropa</h1>
+					<p class="primaryColor">Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+				</div>
+				
+				<div class="heading text-left" style="margin: 0;">
+					<h1 class="primaryColor" >Şəhərlər</h1>
+				</div>
+				<div class="row">
+					<div class="col">
+						<a href="#"><p>Roma</p></a>
+						<a href="#"><p>Milan</p></a>
+						<a href="#"><p>Genoa</p></a>
+						<a href="#"><p>Verona</p></a>
+					</div>
+					<div class="col">
+						<a href="#"><p>Venice</p></a>
+						<a href="#"><p>Bologna</p></a>
+						<a href="#"><p>Trieste</p></a>
+						<a href="#"><p>Florence</p></a>
+					</div>
+					<div class="col">
+						<a href="#"><p>Palermo</p></a>
+						<a href="#"><p>Siena</p></a>
+						<a href="#"><p>San Marino</p></a>
+						<a href="#"><p>Naples</p></a>
+					</div>
+				</div>
+				
+				<input class="btn btn-primary form-control w-50" type="submit" value="Ardını Oxu">
+					
+			</div>
+		</div>
+
+		<div class="row" style="margin:100px 0;">
+		<div class="col-lg-6">
+				<div class="heading text-right" style="margin: 0;">
+					<h1 class="primaryColor">ATHENS, GREECE</h1>
+					<p class="primaryColor">Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+				</div>
+				
+				<div class="heading text-right" style="margin: 0;">
+					<h1 class="primaryColor" >Şəhərlər</h1>
+				</div>
+				<div class="row text-right">
+					<div class="col">
+						<a href="#"><p>Roma</p></a>
+						<a href="#"><p>Milan</p></a>
+						<a href="#"><p>Genoa</p></a>
+						<a href="#"><p>Verona</p></a>
+					</div>
+					<div class="col">
+						<a href="#"><p>Venice</p></a>
+						<a href="#"><p>Bologna</p></a>
+						<a href="#"><p>Trieste</p></a>
+						<a href="#"><p>Florence</p></a>
+					</div>
+					<div class="col">
+						<a href="#"><p>Palermo</p></a>
+						<a href="#"><p>Siena</p></a>
+						<a href="#"><p>San Marino</p></a>
+						<a href="#"><p>Naples</p></a>
+					</div>
+				</div>
+				<input class="btn btn-primary form-control-lg w-50 mb-3 float-right" type="submit" value="Ardını Oxu">
+			</div>
+		
+		
+			<div class="col-lg-3">
+				<a href="tours.html">
+					<div class="country-bg wow fadeInUp" data-wow-delay="0.4s" style="background-image: url(images/tour-1.jpg)">
+						<div>
+							<p>ROME-5 DAYS</p>
+							<span class="first-color font-weight-bold">$120</span>
+							<small class="font-weight-bold">/ person</small>
+						</div>
+					</div>	
+				</a>
+				
+				<a href="tours.html">
+					<div class="country-bg wow fadeInUp" data-wow-delay="0.6s" style="background-image: url(images/tour-2.jpg)">
+						<div>
+							<p>ROME-5 DAYS</p>
+							<span class="first-color font-weight-bold">$120</span>
+							<small class="font-weight-bold">/ person</small>
+						</div>
+					</div>	
+				</a>
+				
+				
+			</div>
+			<div class="col-lg-3">
+				<a href="tours.html">
+					<div class="country-bg wow fadeInUp" data-wow-delay="0.8s" style="background-image: url(images/tour-3.jpg)">
+						<div>
+							<p>ROME-5 DAYS</p>
+							<span class="first-color font-weight-bold">$120</span>
+							<small class="font-weight-bold">/ person</small>
+						</div>
+					</div>	
+				</a>
+				
+				<a href="tours.html">
+					<div class="country-bg wow fadeInUp" data-wow-delay="1s" style="background-image: url(images/tour-4.jpg)">
+						<div>
+							<p>ROME-5 DAYS</p>
+							<span class="first-color font-weight-bold">$120</span>
+							<small class="font-weight-bold">/ person</small>
+						</div>
+					</div>	
+				</a>
+			</div>
+			
+		</div>
+	</div><!--class="popularTravel"-->
+	
+	<div class="sale padded-container" style="background-image: url(images/img_bg_4.jpg); height: 30rem;">
+		<div class="register">
+			<h2 class="text-white text-center font-weight-normal">QEYDİYYAT</h2>
+			<p class="text-white text-center font-weight-light">YENİLİKLƏRDƏN XƏBƏRDAR OLMAQ ÜÇÜN QEYDİYYATDAN KECİN</p>
+			<div class="row">
+			<div class="col-lg-12 ">
+					<form>
+						 <div class="form-group w-100 wow fadeInUp" data-wow-delay="0.6s">
+							<input type="email" class="form-control w-75 d-inline-block" id="exampleInputEmail1" aria-describedby="emailHelp"   placeholder="Emailinizi daxil edin">
+							<button type="submit" class="btn  w-25 d-inline-block">Qeydiyyat</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>		
+	</div>		
+</main>
+
+<footer class="padded-container">
+<div class="max">
+	<div class="row">
+		<div class="col-lg-3">
+			<div class="tour-agency">
+				<h5 class="text-white">Tour</h5>
+				<small class="secondaryColor d-block">Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</small>
+				<span><a href="#"><i class="fab fa-twitter first-color" ></i></a></span>
+				<span><a href="#"><i class="fab fa-facebook-f first-color"></i></a></span>
+				<span><a href="#"><i class="fab fa-linkedin-in first-color"></i></a></span>
+			</div><!--class="tour-agency"-->
+		</div>
+		
+		<div class="col-lg-2">
+			<div class="bron">
+				<h5 class="text-white">İndi bron edin</h5>
+				<ul>
+					<li><a href="#">Uçuş</a></li>
+					<li><a href="hotels.html">Otel</a></li>
+					<li><a href="#">İcarə Maşın</a></li>
+					<li><a href="tours.html">Top Turlar</a></li>
+				</ul>
+			</div><!--class="bron"-->
+		</div>
+		<div class="col-lg-2">
+			<div class="deals">
+				<h5 class="text-white">Təkliflər</h5>
+				<ul>
+					<li><a href="#">Edina Hotel</a></li>
+					<li><a href="#">Quality Suites</a></li>
+					<li><a href="#">The Hotel Zephyr</a></li>
+					<li><a href="#">Da Vinci Villa</a></li>
+					<li><a href="#">Hotel Epikk</a></li>
+				</ul>
+			</div><!--class="deals"-->
+		</div>
+		<div class="col-lg-2">
+			<div class="post">
+				<h5 class="text-white">Postlar</h5>
+				<ul>
+					<li><a href="#">Is simply dummy text of the printing and</a></li>
+					<li><a href="#">Is simply dummy text of the printing and </a></li>
+					<li><a href="#">Is simply dummy text of the printing and </a></li>
+					<li><a href="#">Is simply dummy text of the printing and </a></li>
+					<li><a href="#">Is simply dummy text of the printing and </a></li>
+				</ul>
+			</div><!--class="post"-->
+		</div>
+		<div class="col-lg-3">
+			<div class="post">
+				<h5 class="text-white">Bizimlə Əlaqə</h5>
+				<ul>
+					<li><small class="secondaryColor d-block">291 South 21th Street, Suite 721 New York NY 10016</small></li>
+					<li><a href="#">+99412 594-04-91</a></li>
+					<li><a href="#">info@yoursite.com </a></li>
+					<li><a href="#">agahuseynoff.com </a></li>
+				</ul>
+			</div><!--class="post"-->
+		</div>
+	</div>
+	
+	<div class="copyright text-center w-100 secondaryColor">Copyright ©2018 <span class="first-color">All rights reserved</span></div>
+</div>
+</footer>
+	
+	
+<script>
+	
+	
+	</script>
+	
+	
+	<script type="text/javascript" src="script/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+
+	<script type="text/javascript" src="engine1/wowslider.js"></script>
+	<script type="text/javascript" src="engine1/script.js"></script>
+	<script type="text/javascript" src="script/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="script/jquery.fancybox.min.js"></script>
+	<!--<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js"></script>-->
+	<script type="text/javascript" src="script/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="script/bootstrap.min.js"></script>
+	<script type="text/javascript" src="script/js.js"></script>	
+</body>
+</html>

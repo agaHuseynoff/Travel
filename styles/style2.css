@@ -1,0 +1,112 @@
+.modal input[type=text], input[type=password] {
+    width: 100%;
+    padding: 8px 10px;
+    margin:0 0 20px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}		
+.modal .continer{
+	background-color: #2C2E3E;
+}		
+.modal input:focus,button:focus{
+	outline: 0;
+	box-shadow: 0 0 0 0;
+			
+}
+.modal button:hover{
+	color: #fff;
+	transition: 0.2s;
+}
+		
+.modal button {
+    background-color: #ffdd00;
+    color: #000;
+    padding:10px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+	transition: 0.2s;
+}
+
+
+.modal .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #ffdd00;
+}
+
+
+.modal .imgcontainer {
+    text-align: center;
+    margin: 0 0 50px 0;
+    position: relative;
+}		
+.modal .closed {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #fff;
+    font-size: 35px;
+}
+
+.modal .closed:hover,
+.modal .closed:focus {
+    color: #000;
+    cursor: pointer;
+}
+		
+		
+.modal label{
+	color: #fff;
+}
+
+.modal span.psw {
+    float: right;
+    padding-top: 16px;
+	color: #fff;
+}
+
+
+.modal {
+    display: block; 
+    position: fixed; 
+    z-index: 1; 
+    width: 100%; 
+    height: 100%;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.6); 
+    padding-top: 30px;
+}
+.modal .modal-content {
+    background-color: #2C2E3E;
+    margin: auto; 
+    border: 1px solid #888;
+    width: 50%;
+}
+.modal .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
